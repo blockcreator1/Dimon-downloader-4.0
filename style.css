@@ -24,8 +24,55 @@ ul {
     width: 23%;
     vertical-align: top;
     border: 3px solid rgb(67, 62, 127);
+    padding: 10px;
+    margin-right: 10px;
 }
 img {
     width: 100%;
 
+}
+ul {
+    padding-left: 20px;
+}
+a {
+    color: rgb(0, 255, 21);
+}
+.animation {
+    color: blue;
+    font-size: 100px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation: motion 5s linear 0s infinite;
+}
+@keyframes motion {
+    0%{
+top:0%;
+left: 0%;
+    }
+    50%{
+top:50%;
+left: 50%;
+    }
+    100%{
+top: 100%;
+left: 100%;
+    }
+}
+.ball {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 00%;
+    position: absolute;
+    animation: bounce 30s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2000px);
+    }
 }
